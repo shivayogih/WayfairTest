@@ -99,7 +99,7 @@ fun ProductEntry(
             entry.name?.let {
                 Text(
                     text = it,
-                    fontSize = 20.sp,
+                    fontSize = 14.sp,
                     color = Color.Black,
                     fontWeight = FontWeight.ExtraBold
                 )
@@ -107,15 +107,16 @@ fun ProductEntry(
             entry.tagline?.let {
                 Text(
                     text = "Tagline:$it",
-                    fontSize = 14.sp,
+                    fontSize = 12.sp,
                     color = Color.Black,
                     fontWeight = FontWeight.Medium
                 )
             }
+
             entry.rating?.let {
                 Text(
-                    text = "Rating: $it",
-                    fontSize = 20.sp,
+                    text = "Rating: $it.roundToInt() ",
+                    fontSize = 14.sp,
                     color = Color.Black,
                     fontWeight = FontWeight.SemiBold
                 )
@@ -123,7 +124,7 @@ fun ProductEntry(
 
             entry.date?.let {
                 Text(
-                    text = "Date:$it", fontSize = 14.sp, color = Color.Black
+                    text = "Date:$it", fontSize = 12.sp, color = Color.Black
                 )
             }
 
